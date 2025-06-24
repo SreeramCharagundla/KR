@@ -1,1 +1,40 @@
 /.metadata/
+/.vscode/
+# Backend ignores (existing ones)
+*.class
+*.log
+.settings/
+.classpath
+.project
+bin/
+.idea/
+*.iml
+*.ipr
+*.iws
+/target/
+/build/
+.mvn/wrapper/maven-wrapper.jar
+.DS_Store
+docs/
+*.db
+*.sqlite
+*.tmp
+*.swp
+.factorypath
+
+# Frontend ignores (Angular-specific)
+KR-frontend/node_modules/
+KR-frontend/dist/
+KR-frontend/.angular/
+KR-frontend/.vscode/
+KR-frontend/.idea/
+KR-frontend/src/environments/*.local.ts
+KR-frontend/.angular/cache/
+KR-frontend/*.log
+
+# OS Specific ignores
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+**/Icon
+**/._*
