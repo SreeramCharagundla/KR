@@ -1,12 +1,27 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { LoginComponent } from './login/login';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, LoginComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'],
 })
-export class App {
-  protected title = 'KR-frontend';
+export class AppComponent {
+  isLoggedIn = false;
+  showLoginForm = false;
+  userName = '';
+
+  showLogin(): void {
+    this.showLoginForm = true;
+  }
+
+  /** receives the user’s name from <app-login> */
+  handleLogin(name: string): void {
+    this.userName = name;
+    this.isLoggedIn = true;
+    this.showLoginForm = false;
+  }
 }

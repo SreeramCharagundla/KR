@@ -18,6 +18,10 @@ public class UserProfileService {
 		return repository.findAll();
 	}
 	
+	public UserProfile getProfileByPhone(String phoneNumber) {
+	    return repository.findById(phoneNumber).orElse(null);
+	}
+	
 	public UserProfile saveProfile(UserProfile profile) {
 		return repository.save(profile);
 	}
