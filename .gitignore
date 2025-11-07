@@ -1,0 +1,71 @@
+# -------------------------
+# ⚙️ Angular / Node
+# -------------------------
+node_modules/
+dist/
+tmp/
+out-tsc/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# -------------------------
+# 🧱 Build Artifacts
+# -------------------------
+.angular/
+.cache/
+.sass-cache/
+.parcel-cache/
+.eslintcache
+firebase-debug.log
+functions/lib/
+
+# -------------------------
+# 🧩 IDE & Editor
+# -------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# 🔒 Environment & Secrets
+# -------------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*
+firebase.json
+.firebaserc
+.secret/
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+
+# -------------------------
+# 🧪 Test & Reports
+# -------------------------
+/test-output
+/coverage
+/lcov-report
+/junit.xml
+*.spec.ts
+
+# -------------------------
+# 🧰 Misc
+# -------------------------
+/functions/node_modules
+/functions/.env
+/.firebase/
