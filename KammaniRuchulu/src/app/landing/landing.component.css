@@ -1,0 +1,34 @@
+.pin-container {
+  height: 1500vh;
+} /* longer section = gentler scrub */
+.sticky {
+  position: sticky;
+  top: 64px;
+  z-index: 0;
+}
+.video-wrap {
+  position: relative;
+}
+.hero-video {
+  width: 100%;
+  display: block;
+  background: #cc0000;
+}
+.content {
+  padding: 24px 16px;
+}
+/* The magic: fades from transparent (show video) to your theme surface color */
+.fade-to-surface {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25vh; /* blend length; 20–30vh feels nice */
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(204, 0, 0, 0) 0%,
+    /* fully transparent over video */ var(--kr-surface) 100%
+      /* ends at your page bg */
+  );
+}

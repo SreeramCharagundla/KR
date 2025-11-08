@@ -1,0 +1,26 @@
+<section #pinContainer class="pin-container">
+  <div #stickyEl class="sticky">
+    <div class="video-wrap">
+      <video
+        #videoEl
+        class="hero-video"
+        preload="auto"
+        playsinline
+        muted
+        (loadedmetadata)="onLoadedMetadata()"
+        (canplay)="onCanPlay()"
+        aria-label="Intro video"
+      >
+        <source src="assets/KR-scroll-gop12-crf18.mp4" type="video/mp4" />
+      </video>
+
+      <!-- This is the blend overlay -->
+      <div class="fade-to-surface"></div>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <h2>Welcome to Kammani Ruchulu</h2>
+  <p>Authentic Hyderabadi catering and instant delivery.</p>
+</section>

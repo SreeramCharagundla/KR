@@ -1,0 +1,12 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --kr-surface: var(
+    --mat-sys-surface,
+    #ffffff
+  ); /* fallback if var not present */
+}
