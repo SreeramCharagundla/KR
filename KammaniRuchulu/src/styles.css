@@ -5,8 +5,5 @@ body {
 }
 
 :root {
-  --kr-surface: var(
-    --mat-sys-surface,
-    #ffffff
-  ); /* fallback if var not present */
+  --kr-surface: var(--mat-sys-surface, #ffffff);
 }
